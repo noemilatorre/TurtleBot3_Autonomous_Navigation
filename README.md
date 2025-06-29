@@ -4,6 +4,10 @@
 
 This ROS package enables a **TurtleBot3 Waffle Pi** to autonomously navigate inside a lane, stop at traffic lights, and recognize traffic signs (like STOP).
 
+
+<img src="rosso.jpg" alt="Logo" width="150"/>
+
+
 ---
 
 
@@ -16,20 +20,19 @@ This ROS package enables a **TurtleBot3 Waffle Pi** to autonomously navigate ins
 
 ---
 ## 📁 File Structure
-
+```bash
 src/
-<br>
 ├── turtlebot_control.cpp # Main node: decision-making, movement control <br>
 ├── vision_processing.cpp # Traffic light and line segmentation and color classification <br>
 ├── line_hsv_tuner.cpp # Debugging tool for visualizing lane lines (optional) <br>
 ├── trafficlight_hsv_tuner.cpp # Used to test thresholds and parameters for traffic lights (optional) <br>
-
+```
 
 ---
 
 ## 📄 File Descriptions
 
-### `progetto.cpp`
+### `turtlebot_control.cpp`
 Main node that:
 - Subscribes to camera 
 - Controls robot movement based on lane and traffic light detection
@@ -47,16 +50,19 @@ Handles:
 ---
 
 ## 🛠️ How to Build
-cd ~/catkin_ws <br>
-catkin_make <br>
-source devel/setup.bash <br>
+```bash
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+```
 
 ---
 
 ## 🚀 How to Run
+```bash
 rosrun autorace vision_processing_node <br>
 rosrun autorace turtlebot_control_node 
-
+```
 ---
 
 ## Autors
