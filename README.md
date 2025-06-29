@@ -1,5 +1,3 @@
-# Applied_Robotics_project
-
 # 🚧 TurtleBot3 Lane Following & Traffic Light Recognition
 
 This ROS package enables a **TurtleBot3 Waffle Pi** to autonomously navigate inside a lane, stop at traffic lights, and recognize traffic signs (like STOP).
