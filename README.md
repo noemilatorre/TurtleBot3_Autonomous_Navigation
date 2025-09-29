@@ -1,4 +1,4 @@
-# 🚧 TurtleBot3 Lane Following & Traffic Light Recognition
+# TurtleBot3 Lane Following & Traffic Light Recognition
 
 This ROS package enables a **TurtleBot3 Waffle Pi** to autonomously navigate inside a lane, stop at traffic lights, and recognize traffic signs (like STOP).
 
@@ -9,7 +9,7 @@ This ROS package enables a **TurtleBot3 Waffle Pi** to autonomously navigate ins
 ---
 
 
-## 🎯 Project Goals
+## Project Goals
 
 - Follow a colored lane using a camera
 - Detect and respond to **red, yellow, and green** traffic lights
@@ -47,7 +47,7 @@ Handles:
 
 ---
 
-## 🛠️ How to Build
+## How to Build
 ```bash
 cd ~/catkin_ws
 catkin_make
@@ -56,7 +56,7 @@ source devel/setup.bash
 
 ---
 
-## 🚀 How to Run
+## How to Run
 ```bash
 rosrun autorace vision_processing_node <br>
 rosrun autorace turtlebot_control_node 
